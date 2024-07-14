@@ -43,7 +43,7 @@
 }
 
 /* responsive button */
-@media screen and (max-width: 576px){
+/* @media screen and (max-width: 360px){
     .btn-primary{
         font-size: 16px;
         padding: 8px 16px;
@@ -54,7 +54,7 @@
     .section-description{
         font-size: 11px;
     }
-}
+} */
 
 /* header style */
 .header{
@@ -92,12 +92,14 @@ nav ul li a{
 }
 
 /* nav responsive style */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 360px) {
     .header{
+        max-width: 200px;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 50px auto;
+        background-image: none;
     }
     nav{
         flex-direction: column;
@@ -113,10 +115,7 @@ nav ul li a{
         gap: 12px;
         padding: 0;
     }
-    .header{
-        background-image: none;
-    }
-}
+} */
 
 /* banner styles */
 .banner{
@@ -153,15 +152,17 @@ nav ul li a{
 }
 
 /* nav responsive style */
-@media screen and (max-width: 576px){
+/* @media screen and (max-width: 360px){
     .banner{
         flex-direction: column-reverse;
         align-items: center;
         margin: 0 5px 0 20px;
         height: 560px;
+        max-width: 360px;
     }
     .banner-content{
         max-height: 400px;
+        max-width: 340px;
     }
     .banner-greetings{
         font-size: 25px;
@@ -180,7 +181,7 @@ nav ul li a{
     .banner-image{
         max-width: 280px;
     }
-}
+} */
 
 /* main style */
 main{
@@ -188,11 +189,12 @@ main{
     margin: 130px auto;
 }
 
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 360px) {
     main{
+        max-width: 360px;
         margin: 50px auto;
     }
-}
+} */
 
 /* About section style */
 .about{
@@ -223,9 +225,11 @@ main{
 }
 
 /* about resposive style */
-@media screen and (max-width: 576px){
+/* @media screen and (max-width: 360px){
     .about{
         padding: 15px 20px;
+        max-width: 200px;
+        margin: 0px 10px;
     }
     .about-items{
         flex-direction: column;
@@ -242,4 +246,111 @@ main{
         font-weight: bold;
         margin-top: 5px;
     }
+} */
+
+.what-i-do-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.what-i-do-content{
+    width: 909px;
+    text-align: center;
+    margin: 100px 0px 50px 0px;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-items{
+    width: 267px;
+    height: 377px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-item{
+    padding: 25px;
+}
+
+.card-title{
+    color: rgb(24, 24, 24);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: left;
+}
+
+/* resume section style */
+.resume-container{
+    margin-top: 130px;
+}
+.resume-container > h2{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.education-items > h2, .experience-items > h2{
+    font-size: 30px;
+}
+
+.resume-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.education-item, .experience-item{
+    width: 511px;
+    height: 175px;
+    margin-bottom: 28px;
+}
+
+/* contact us section style */
+.contact-us-content{
+    width: 1140px;
+    height: 500px;
+    margin: 50px auto 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social{
+    width: 45%;
+}
+
+.social p{
+    font-size: 15px;
+}
+
+.social-icon{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form-side{
+    width: 50%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-fill{
+    width: 75%;
+    height: 64px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    border: none;
+    padding: 5px;
+}
+
